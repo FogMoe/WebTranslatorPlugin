@@ -2,7 +2,7 @@
 // @name         网页翻译插件模板
 // @namespace    https://github.com/scarletkc/WebTranslatorPlugin
 // @version      0.1
-// @description  将网页的语言更改为各种其他的语言
+// @description  能够将网页的语言更改为各种其他的语言
 // @author       Kc
 // @match        *://fog.moe/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
@@ -12,14 +12,22 @@
 
 (function() {
     'use strict';
-    var chosenLang = "";
+    var chosenLang = ""; 
     var TranslationsCN = {
+        //网页中原文和对应的翻译
         "AnEnglishWord":"翻译后的中文",
         "Hello":"你好"
 
     };    
+    var AllElementClassName = [
+        //网页中所有的需要翻译的原文元素的className
+        "The First Element Class Name",
+        "The Second Element Class Name"
+
+    ];
 
     function Replace(className,language) {
+        //根据className查找元素，并根据选择的language替换元素的文本
         var elements = document.getElementsByClassName(className);         
         var loop = setInterval(function(){
             if(elements.length > 0) {
@@ -39,12 +47,14 @@
         }, 5000);*/                   
     }
 
-    if(true){
-        chosenLang = "zh-CN"       
+    if(true){ //选择一个语言
+        chosenLang = "zh-CN" //简体中文
     }
 
-    Replace("The First Element Class Name",chosenLang);
-    Replace("The Second Element Class Name",chosenLang);
+    for(var i = 0; i < AllElementClassName.length; i++) {
+        //翻译并替换网页中的元素
+        Replace(AllElementClassName[i],chosenLang);
+    }
 
 
 })();
