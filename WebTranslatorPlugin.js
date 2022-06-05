@@ -2,7 +2,7 @@
 // @name         网页翻译插件模板
 // @namespace    https://github.com/scarletkc/WebTranslatorPlugin
 // @version      0.1
-// @description  将网页的语言更改为各种语言
+// @description  将网页的语言更改为各种其他的语言
 // @author       Kc
 // @match        *://fog.moe/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
