@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  将网页的语言更改为各种语言
 // @author       Kc
-// @match        *://xxxxxx.com/*
+// @match        *://fog.moe/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // @license      GPL-2.0 License
@@ -43,7 +43,8 @@
         chosenLang = "zh-CN"       
     }
 
-    Replace("The Element Class Name",chosenLang);
+    Replace("The First Element Class Name",chosenLang);
+    Replace("The Second Element Class Name",chosenLang);
 
 
 })();
