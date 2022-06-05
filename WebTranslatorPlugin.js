@@ -52,7 +52,7 @@
     }
 
     for(var i = 0; i < AllElementClassName.length; i++) {
-        //翻译并替换网页中的元素
+        //翻译并替换网页中的全部元素
         Replace(AllElementClassName[i],chosenLang);
     }
 
