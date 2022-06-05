@@ -1,2 +1,2 @@
-# GitHubTranslator
-Script For Tampermonkey 油猴脚本将GitHub的语言改为简体中文/繁体中文
+# WebTranslatorPlugin
+Script For Tampermonkey 油猴脚本将网页的语言改为各种语言
